@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>login</title>
+	    
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div class="container right-panel-active">
+			<div class="container-from container--singup">
+				<form action="register.php" class="from" id="from1">
+					<h2 class="from-title">注册账号</h2>
+					<input type="text" placeholder="User" class="input" id="registeruser"/>
+					<input type="email" placeholder="Email" class="input" id="registeremail"/>
+					<input type="password" placeholder="Password" class="input" id="registerpassword"/>
+					<button class="btn" >点击注册</button>
+				</form>
+			</div>
+			
+			<div class="container-from container--singin">
+				<form action="main.html" class="from" id="from2">
+					<h2 class="from-title">欢迎登陆</h2>
+					<input type="email" placeholder="Email" class="input" id="loginEmail"/>
+					<input type="password" placeholder="Password" class="input" id="loginPassword"/>
+					<a href="main.html" class="link">忘记密码?</a>
+					<button class="btn" >登陆</button>
+				</form>
+			</div>
+			
+			<div class="container_overlay">
+				<div class="overlay">
+					<div class="overlay_panel overlay--left">
+						<button class="btn" id="signin">已有账号，直接登陆</button> 
+					</div>
+					
+					<div class="overlay_panel overlay--right">
+						<button class="btn" id="signup">没有账号，点击注册</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
